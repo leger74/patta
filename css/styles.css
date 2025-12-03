@@ -1,0 +1,902 @@
+/* bajo una fuente de google fonts, asi puedo elegir una fuente mas dinamica que las ofrecidas por visual studio*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Reseteo la pagina para evitar, problemas con los espacios*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Aqui utilizo un grid para organizar la pagina , y que no se superpongan, la divido en tres rows, un header, un main y un footer*/
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: "open Sans", sans-serif;
+    min-height: 100vh;
+
+   
+}
+
+
+/*Utilizo una fotografia para el header y la oscuresco con linear gradient asi logro un contraste con el texto, tambien aplico un flex para distribuir el contenido*/
+
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)), url(../imagenes/IMG_20240125_092715_455.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+
+
+
+
+}
+
+.index-header{
+    height: 100vh;
+}
+
+/*Le doy una imagen a todo la pagina asi busco un color verde que sea el color de todo el proyecto y la fijo*/
+
+.principal{
+    background: url(../imagenes/IMG_20240117_162825_915.jpg) center/cover no-repeat fixed;
+}
+
+
+/*Aqui le doy un tamaño al main, es mas facil leer su contenido,tambien lo centro.  */
+main{
+    width: 90%;
+    margin: 0 auto;
+   
+}
+
+section h2{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    
+    background-color:#2612db4f;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 100px;
+   
+}
+
+.navbar{
+    display: flex;
+    margin-top: 20px;
+   
+}
+
+.menu .navbar ul li {
+   position: relative;
+   list-style: none;
+   float: left;
+  
+  
+}
+
+.menu .navbar ul li a {
+    color: #fffdfc;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ffb400;
+    transition: 0.3s;
+}
+
+.menu #menu{
+    display: none;
+}
+
+.menu label{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Con la clase active, sabemo en que estamos en las diferente secciones de la pagina, ya que se ponen de color verde*/
+
+.active{
+    background-color: rgba(47, 123, 47, 0.821);
+    padding: 5px;
+    border-radius: 10px;
+    color: #fffdfc;
+}
+
+/*Hero*/
+
+.hero{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 400px;
+    color: #fffdfc;
+}
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0 550px;
+}
+
+
+/*   SECCION PATAGONIA INFINITA*/
+
+
+
+.pata-infinita{
+    text-align: center;
+    background-color: rgba(47, 123, 47, 0.87);
+    min-height: 100vh;
+    
+}
+
+
+.infinita-txt h2{
+    font-size: 70px;
+    color: #fffdfc;
+   
+}
+
+.infinita-txt p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fffdfc;
+    font-weight: 600;
+    padding: 0 200px;
+    text-align: justify;
+    margin: 20px;
+}
+
+hr{
+    border: 1px solid black;
+    margin: 20px auto;
+   
+    width: 80%;
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+
+.container-pata{
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px;
+    gap: 10px;
+}
+
+.pata-hv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    
+}
+
+.pata-bosque{
+    position:relative;
+  
+
+}
+
+.pata-bosque img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.txt-bosque{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  
+    
+    
+}
+
+.bosque{
+    font-size: 30px;
+    font-weight: 800;
+    color: #fffdfc;
+    margin-bottom: 20px;
+}
+
+
+
+.bosque1 {
+    text-decoration: none;
+    color: #fffdfc;
+    font-size: 20px;
+    font-weight: 800;
+    background-color:rgba(128, 128, 128, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+   
+
+}
+
+.bosque1:hover{
+    color: #ffb400;
+    transform: translateY(-10px);
+}
+
+
+.pata-h{
+    position: relative;
+}
+
+.pata-txt{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+
+
+.pata-h img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.pata-v{
+    position: relative;
+
+}
+
+.txt-v{
+    position:absolute;
+    top: 50%;
+    left: 5%;
+}
+
+
+
+
+
+.pata-v img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+/*PRESENTACION*/
+
+.presentacion{
+   
+    text-align: center;
+    background-color: rgba(47, 123, 47, 0.552);
+    padding: 10px;
+    margin-top: -10px;
+   
+}
+
+.presentacion h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: #fffdfc;
+    margin-top: -20px;
+  
+}
+
+
+.contenedor-presentacion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 10px;
+
+    
+}
+
+.present-1 p {
+    margin-bottom: 30px;
+    text-align: justify ;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fffdfc;
+    padding: 20px;
+    margin: 10px;
+
+}
+.pata-infinita p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0 200px;
+    text-align: justify;
+    margin: 20px;
+}
+
+
+.present-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ .present-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.present-4{
+    text-align: justify ;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fffdfc;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+
+/*ZONAS PATAGONIA*/
+
+.zonas{
+    text-align: center;
+    background-color: rgba(47, 123, 47, 0.636);
+    padding: 50px;
+   
+}
+
+.zonas h2{
+    font-size: 60px;
+  
+    color: #fffdfc;
+  
+  
+  
+}
+
+.sender{
+    background-color: rgba(47, 123, 47, 0.838);
+    padding: 20px;
+    
+   
+
+}
+
+.sender1{
+    width: 80%;
+    border: 2px solid white;
+    margin-top: -10px;
+    
+}
+
+
+   
+
+
+.zonas-pata{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.zona-1, .zona-2, .zona-3{
+    display: grid;
+    grid-template-rows: 60% 40%;
+    gap: 10px;
+    align-items: center;
+    background-color: rgba(47, 123, 47, 0.897);
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    border: 2px solid black;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.501);
+    
+  
+}
+
+.zona-1  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.zona-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.zona-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.zona-1 h3, .zona-2 h3, .zona-3 h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fffdfc;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.zona-1txt, .zona-2txt, .zona-3txt{
+    font-size: 18px;
+    padding: 0 10px;
+    color: #fffdfc;
+    font-weight: 600;
+   
+   
+}
+
+.zona-1:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.zona-2:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.zona-3:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PRODUCTOS*/
+
+.productos-back{
+    display: grid;
+    grid-template-rows: 150px 1fr auto;
+    background: linear-gradient(rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)), url(../imagenes/IMG_20240122_123010_503.jpg) top/cover no-repeat fixed;
+   
+
+}
+
+.productos-txt{
+    color:#fffdfc;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: justify;
+    padding: 0 150px;
+    margin: 50px;
+}
+
+.pata-product{
+   
+    background-color: rgba(47, 123, 47, 0.552);
+
+    
+}
+
+.pata-product h2{
+    color: #fffdfc;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.productos{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.producto1{
+    display: grid;
+    grid-template-rows: 60% 30% 10%;
+    height: 700px;
+    background-color: rgba(47, 123, 47, 0.87);
+    border-radius: 10px;
+ 
+
+
+}
+
+.producto1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.producto1-txt h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.producto1-txt{
+    text-align: justify;
+    justify-content: center;
+    color:#fffdfc;
+    background-color: rgb(47, 123, 47);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.producto-c{
+    background-color: #fffdfc;
+    padding: 10px;
+    background-color: rgb(47, 123, 47); 
+    border-radius: 10px;
+    display: inline-block;
+    color: orange;
+    transition: all .6s ease-in-out;
+}
+
+
+
+.producto-c:hover{
+    transform: translateY(-10px);
+    background-color: #46dd628e;
+}
+
+
+
+.precio{
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+/*FORMULARIO*/
+
+.presupuesto{
+    display: grid;
+    grid-template-rows: 150px 1fr auto;
+    background: url(../imagenes/IMG-20230212-WA0147.jpg) center/cover no-repeat;
+
+
+}
+.contenedor-form{
+ 
+    background-color: rgba(47, 123, 47, 0.87);
+
+}
+
+.txt-form{
+    text-align: justify;
+    color: #fffdfc;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.formularios{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin:0 auto;
+    border-radius: 10px;
+
+}
+
+.formularios label{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.formularios input,
+.formularios textarea{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.formularios input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+   align-items: center;
+    
+  
+    transition: all .5s ease-in-out;
+}
+
+.formularios input[type="submit"]:hover{
+    background-color: orange;
+    transform: translateY(-10px);
+}
+
+.priva{
+   display: flex;
+   justify-content: center;
+}
+
+ .priva label {
+    font-size: 20px;
+    margin-bottom: 10px;
+   
+  
+
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+/*CONTACTO*/
+
+.contacto{
+    display: grid;
+    grid-template-rows: 150px 1fr auto;
+    background: url(../imagenes/IMG_20240117_162825_915.jpg) center/cover no-repeat fixed;
+    z-index: 10;
+   
+}
+
+
+
+
+.contacto-map{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 123, 47, 0.87);
+}
+
+.map2{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    
+   
+}
+
+.map2 h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #333;
+    color: #fffdfc;
+    text-align: center;
+    padding: 10px 0;
+   
+
+}
+
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.4s ease-in-out;
+  
+  
+   
+}
+
+.link{
+    display: inline-block;
+}
+
+.link ul{
+    list-style: none;
+   
+}
+
+.link ul li {
+    font-size: 25px;
+    text-align: justify;
+ 
+}
+
+.link ul li a {
+    text-decoration: none;
+    color:orange
+    
+
+}
+
+.link  a:hover{
+    color: white;
+
+}
+
+.link-redes{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+ 
+ 
+   
+}
+
+.social1 {
+    transition: all .5s ease-in-out;
+
+}
+
+
+
+
+
+.social1:hover{
+    transform:  translateY(-10px);
+   
+}
+
+.direccion{
+    margin-top: 20px;
+}
+
+.politica-txt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.politica-txt h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.politica-txt p {
+    font-size: 16px;
+}
+
+hr{
+    color: white;
+    border: 2px solid white;
+    width: 50%;
+}
+/* Media Queries */
+
+@media (max-width: 768px){
+    .menu label{
+        display: block;
+    }
+    .menu .navbar{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+    .menu .navbar ul li{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu #menu:checked ~ .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu .navbar ul li a{
+        font-size: 25px;
+    }
+    
+    .container-pata{
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-presentacion{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .zonas-pata{
+        grid-template-columns: 1fr;
+         gap: 30px;
+      
+     
+    }
+
+    .productos{
+        flex-direction: column;
+       
+    }
+
+    .menu .navbar ul li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero p{
+        font-size: 16px;
+        padding: 0 20px;
+    }
+}

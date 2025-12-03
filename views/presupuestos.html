@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Presupuesto</title>
+</head>
+<body class="presupuesto">
+    <header>
+        <div class="menu">
+             <img src="../imagenes/signo-sagitario-de-un-arquero.png" alt="figura de un hombre con un arco, icono en negro" height="70" width="70" class="logo">
+        <input type="checkbox" name="menu" id="menu">
+        <label for="menu">
+            <img src="../imagenes/menu-burger-horizontal-svgrepo-com.svg" alt="menu icono hamburguesa" height="40" width="40">
+
+        </label>
+        <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="presupuestos.html" class="active">Presupuestos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+
+    </header>
+    <main>
+        <section class="contenedor-form">
+            <h2 class="txt-form">Si necesita mas informacion, debe rellenar este formulario. Deberan estar cumplimentados todos los campos, gracias.</h2>
+
+            <form id="formulario" class="formularios">
+                
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" pattern="[a-Za-z] {3,}" required>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Introduce tu apellido" pattern="[a-Z-a-z] {3,}" required>
+                    <label for="email">Correo electronico:</label>
+                    <input type="email" name="email" id="email" placeholder="Introduce tu correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" required>
+                    <label for="tel">Telefono:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Introduce tu telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="el formato debe ser : 123-456-7890" required>
+                    <label for="mensaje">Si desea escribanos un mensaje con sus dudas y preguntas:</label>
+                    <textarea name="mensaje" id="mensaje" rows="6"></textarea>
+                    <input type="submit" value="Enviar">
+
+
+                    
+
+
+              
+            </form>
+            <div class="priva">
+                <label for="privacidad">
+                    Acepto la politica de privacidad de la empresa , los terminos y condiciones
+                </label>
+                <input type="checkbox" name="privacidad" id="privacidad" required>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="link">
+                 <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./presupuestos.html">Presupuestos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+               
+                
+            </div>
+            <div class="link-redes">
+                <h3>Contactanos:</h3>
+                <div class="social1">
+                    <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/facebook-3-logo-svgrepo-com.svg" alt="logo de facebook" height="40" width="40"></a>
+
+                    </div>
+                    <div class="social1">
+                        <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/instagram-1-svgrepo-com.svg" alt="logo de instagram" height="40" width="40"></a>
+
+                    </div>
+                    <div class="social1">
+                        <a href="https://www.whatsapp.com" target="_blank"><img src="../imagenes/whatsapp-icon-logo-svgrepo-com.svg" alt="logo de whatsapp" height="40" width="40"></a>
+
+                    </div>
+                </div>
+        </div>
+        <div class="direccion">
+            <p>Dirección: Calle Sant Alonso Rodriguez 69, Porreres, Mallorca, España  | Teléfono: +34 625790289  | E-mail: <a href="mailto:leger50@hotmail.com">leger50@hotmail.com</a></p>
+        </div>
+        <div class="politica-txt">
+                <hr>
+                <h3>Politica de privacidad</h3>
+                <p>Todos los derechos reservados  © 2025</p>
+
+            
+            </div>
+
+    </footer>
+  
+    
+</body>
+</html>

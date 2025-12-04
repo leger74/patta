@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /*Aqui utilizo un grid para organizar la pagina , y que no se superpongan, la divido en tres rows, un header, un main y un footer*/
@@ -27,6 +28,7 @@ header {
     rgba(0,0,0,0.3)), url(../imagenes/IMG_20240125_092715_455.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
+    min-height: 100vh;
 
 
 
@@ -58,6 +60,8 @@ section h2{
     
 }
 
+/*Menu de navegacion, aqui tambien pongo el menu hamburguesa , y lo oculto para  luego exponerlocuando se apliquen las media queries, y oculte el navbar*/
+
 .menu{
     position: absolute;
     top: 0;
@@ -75,6 +79,7 @@ section h2{
     padding: 5px;
     border-radius: 50%;
     margin-right: 100px;
+    animation: aparecer 1s ease-in-out forwards;
    
 }
 
@@ -99,6 +104,7 @@ section h2{
     font-weight: 500;
     padding: 20px;
     display: block;
+    animation: aparecer 1s ease-in-out forwards;
 }
 
 .menu .navbar ul li a:hover{
@@ -119,7 +125,7 @@ section h2{
 }
 
 
-/*Con la clase active, sabemo en que estamos en las diferente secciones de la pagina, ya que se ponen de color verde*/
+/*Con la clase active, sabemos en que estamos en las diferente secciones de la pagina, ya que se ponen de color verde*/
 
 .active{
     background-color: rgba(47, 123, 47, 0.821);
@@ -128,7 +134,7 @@ section h2{
     color: #fffdfc;
 }
 
-/*Hero*/
+/* Seccion Hero*/
 
 .hero{
 
@@ -138,9 +144,10 @@ section h2{
     text-align: center;
     margin-top: 400px;
     color: #fffdfc;
+    animation: aparecer 1s ease-in-out forwards;
 }
 .hero h1{
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 10px;
 }
 .hero p{
@@ -151,20 +158,46 @@ section h2{
 }
 
 
+/*Pongo una flecha par ir al header cuando esto navegando por la pagina*/
+
+.flecha-arriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.flecha-arriba img{
+    width: 60px;
+    height: 60px;
+    transition: all .4s ease-in-out;
+    background-color: rgba(47, 123, 47, 0.634);
+    border-radius: 50%;
+    padding: 5px;
+}
+.flecha-arriba img:hover{
+    transform: translateY(-10px);
+    background-color: rgba(47, 123, 47, 0.87);
+}
+
+
 /*   SECCION PATAGONIA INFINITA*/
 
 
 
 .pata-infinita{
     text-align: center;
-    background-color: rgba(47, 123, 47, 0.87);
+    background-color: rgba(47, 123, 47, 0.629);
     min-height: 100vh;
+    border: 2px solid black;
+    border-radius: 5px;
     
 }
 
 
 .infinita-txt h2{
-    font-size: 70px;
+    font-size: 55px;
     color: #fffdfc;
    
 }
@@ -314,13 +347,14 @@ hr{
    
     text-align: center;
     background-color: rgba(47, 123, 47, 0.552);
-    padding: 10px;
-    margin-top: -10px;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
    
 }
 
 .presentacion h2{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 800;
     color: #fffdfc;
     margin-top: -20px;
@@ -387,12 +421,13 @@ hr{
     text-align: center;
     background-color: rgba(47, 123, 47, 0.636);
     padding: 50px;
+    border: 4px solid black;
+    border-radius: 5px;
    
 }
 
 .zonas h2{
-    font-size: 60px;
-  
+    font-size: 55px;
     color: #fffdfc;
   
   
@@ -401,7 +436,9 @@ hr{
 
 .sender{
     background-color: rgba(47, 123, 47, 0.838);
-    padding: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  
     
    
 
@@ -410,7 +447,8 @@ hr{
 .sender1{
     width: 80%;
     border: 2px solid white;
-    margin-top: -10px;
+    margin: 0 auto;
+    margin-bottom: 40px;
     
 }
 
@@ -427,6 +465,7 @@ hr{
 .zona-1, .zona-2, .zona-3{
     display: grid;
     grid-template-rows: 60% 40%;
+    height: 700px;
     gap: 10px;
     align-items: center;
     background-color: rgba(47, 123, 47, 0.897);
@@ -472,10 +511,12 @@ hr{
 
 .zona-1txt, .zona-2txt, .zona-3txt{
     font-size: 18px;
-    padding: 0 10px;
+    padding: 0 20px;
     color: #fffdfc;
     font-weight: 600;
-   
+    text-align: justify;
+    margin: 20px;
+  
    
 }
 
@@ -746,6 +787,7 @@ footer{
     background-color: #333;
     color: #fffdfc;
     text-align: center;
+    margin-top: 20px;
     padding: 10px 0;
    
 
@@ -837,6 +879,24 @@ hr{
     border: 2px solid white;
     width: 50%;
 }
+
+
+/*animacion*/
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform:translateY(0);
+
+    }
+
+}
+
 /* Media Queries */
 
 @media (max-width: 768px){
@@ -859,7 +919,7 @@ hr{
 
     .menu #menu:checked ~ .navbar{
         display: flex;
-        flex-direction: column;
+       
     }
     .menu .navbar ul li a{
         font-size: 25px;
@@ -867,6 +927,11 @@ hr{
     
     .container-pata{
         grid-template-columns: 1fr;
+    }
+
+    .infinita-txt p{
+        padding: 0 20px;
+
     }
 
     .contenedor-presentacion{
@@ -881,10 +946,7 @@ hr{
      
     }
 
-    .productos{
-        flex-direction: column;
-       
-    }
+
 
     .menu .navbar ul li a {
         font-size: 20px;
@@ -898,5 +960,33 @@ hr{
     .hero p{
         font-size: 16px;
         padding: 0 20px;
+    }
+
+        .productos{
+        flex-direction: column;
+       
+    }
+
+    .productos-txt{
+        font-size: 16px;
+        padding: 0 20px;
+        margin: 20px;
+    }
+
+    .txt-form{
+        width: 95%;
+      
+      
+    }
+
+    .contacto-map img{
+        width: 90%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .contacto-map{
+        flex-direction: column-reverse;
+     
     }
 }

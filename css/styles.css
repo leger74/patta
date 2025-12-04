@@ -147,17 +147,16 @@ section h2{
     animation: aparecer 1s ease-in-out forwards;
 }
 .hero h1{
-    font-size: 60px;
+    font-size: 70px;
     margin-bottom: 10px;
 }
-.hero p{
-    
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    padding: 0 550px;
 
+    
+.hero p{
+    font-size: 24px;
+    padding: 0 400px;
 }
+
     
 
 

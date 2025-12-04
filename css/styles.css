@@ -16,7 +16,6 @@ body {
     font-family: "open Sans", sans-serif;
     min-height: 100vh;
 
-   
 }
 
 
@@ -29,10 +28,6 @@ header {
     display: flex;
     align-items: center;
     min-height: 100vh;
-
-
-
-
 }
 
 .index-header{
@@ -50,7 +45,6 @@ header {
 main{
     width: 90%;
     margin: 0 auto;
-   
 }
 
 section h2{
@@ -80,21 +74,17 @@ section h2{
     border-radius: 50%;
     margin-right: 100px;
     animation: aparecer 1s ease-in-out forwards;
-   
 }
 
 .navbar{
     display: flex;
     margin-top: 20px;
-   
 }
 
 .menu .navbar ul li {
-   position: relative;
-   list-style: none;
-   float: left;
-  
-  
+    position: relative;
+    list-style: none;
+    float: left;
 }
 
 .menu .navbar ul li a {
@@ -201,8 +191,8 @@ section h2{
 
 .infinita-txt h2{
     font-size: 55px;
+    font-weight: 800;
     color: #fffdfc;
-   
 }
 
 .infinita-txt p{
@@ -218,7 +208,6 @@ section h2{
 hr{
     border: 1px solid black;
     margin: 20px auto;
-   
     width: 80%;
     display: flex;
     
@@ -251,8 +240,6 @@ hr{
 
 .pata-bosque{
     position:relative;
-  
-
 }
 
 .pata-bosque img{
@@ -267,9 +254,6 @@ hr{
     position: absolute;
     top: 25%;
     left: 10%;
-  
-    
-    
 }
 
 .bosque{
@@ -291,8 +275,6 @@ hr{
     border-radius: 10px;
     display: inline-block;
     transition: all .4s ease-in-out;
-   
-
 }
 
 .bosque1:hover{
@@ -347,21 +329,17 @@ hr{
 /*PRESENTACION*/
 
 .presentacion{
-   
     text-align: center;
     background-color: rgba(47, 123, 47, 0.552);
     padding: 50px;
     border: 2px solid black;
     border-radius: 5px;
-   
 }
 
 .presentacion h2{
     font-size: 55px;
     font-weight: 800;
     color: #fffdfc;
-  
-  
 }
 
 
@@ -400,10 +378,6 @@ hr{
     background-color: rgba(47, 123, 47, 0.838);
     padding: 10px;
     border-radius: 10px;
-  
-    
-   
-
 }
 
 .sender1{
@@ -416,7 +390,7 @@ hr{
 
 /*Estilo de las imagenes de presentacion, con flexbox para centrar las imagenes*/
 
- .present-2{
+.present-2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -430,7 +404,7 @@ hr{
     border-radius: 10px;
 }
 
- .present-3 img{
+.present-3 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -456,21 +430,15 @@ hr{
     padding: 50px;
     border: 4px solid black;
     border-radius: 5px;
-   
 }
 
 .zonas h2{
     font-size: 55px;
     color: #fffdfc;
-  
-  
-  
 }
 
 
 
-
-   
 
 /*Utilizo un grid para distribuir las tres zonas ,con sus senderos mas famosos, utilizo un grid, para el contenedor y las zonas*/
 .zonas-pata{
@@ -491,7 +459,6 @@ hr{
     border: 2px solid black;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.501);
     
-  
 }
 
 .zona-1  img{
@@ -534,8 +501,6 @@ hr{
     font-weight: 600;
     text-align: justify;
     margin: 20px;
-  
-   
 }
 
 /*Efecto hover para las zonas, asi al pasar el mouse por encima se eleva un poco la tarjeta*/
@@ -557,17 +522,6 @@ hr{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*PRODUCTOS*/
 
 /*Aqui utilizo un grid para distribuir la seccion de productos, y le doy menos espacio al header para que no ocupe tanto espacio y le doy una imagen de fondo con un linear gradient para oscurecerla y lograr un mejor contraste con el texto*/
@@ -577,8 +531,6 @@ hr{
     grid-template-rows: 150px 1fr auto;
     background: linear-gradient(rgba(0,0,0,0.3),
     rgba(0,0,0,0.3)), url(../assets/imagenes/IMG_20240122_123010_503.jpg) top/cover no-repeat fixed;
-   
-
 }
 
 .productos-txt{
@@ -591,8 +543,7 @@ hr{
 }
 
 .pata-product{
-   
-    background-color: rgba(47, 123, 47, 0.552);
+background-color: rgba(47, 123, 47, 0.552);
 
     
 }
@@ -618,9 +569,6 @@ hr{
     height: 700px;
     background-color: rgba(47, 123, 47, 0.87);
     border-radius: 10px;
- 
-
-
 }
 
 .producto1 img{
@@ -679,8 +627,6 @@ hr{
 
 /*FORMULARIO*/
 
-
-
 .presupuesto{
     display: grid;
     grid-template-rows: 150px 1fr auto;
@@ -689,8 +635,7 @@ hr{
 
 }
 .contenedor-form{
- 
-    background-color: rgba(47, 123, 47, 0.87);
+        background-color: rgba(47, 123, 47, 0.87);
 
 }
 
@@ -735,9 +680,7 @@ hr{
     width: 50%;
     margin: 20px auto;
     display: flex;
-   align-items: center;
-    
-  
+    align-items: center;
     transition: all .5s ease-in-out;
 }
 
@@ -747,25 +690,20 @@ hr{
 }
 
 .priva{
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
- .priva label {
+.priva label {
     font-size: 20px;
     margin-bottom: 10px;
-   
-  
 
 }
+
 input[type="checkbox"]{
     width: 20px;
     height: 20px;
 }
-
-
-
-
 
 /*CONTACTO*/
 
@@ -776,7 +714,6 @@ input[type="checkbox"]{
     grid-template-rows: 150px 1fr auto;
     background: url(../assets/imagenes/IMG_20240117_162825_915.jpg) center/cover no-repeat fixed;
     z-index: 10;
-   
 }
 
 
@@ -787,7 +724,6 @@ input[type="checkbox"]{
     text-align: center;
     color: #fffdfc;
     font-size: 55px;
-   
 }
 
 .contacto-map{
@@ -803,13 +739,11 @@ input[type="checkbox"]{
     font-size: 20px;
     margin: 20px;
     
-   
 }
 
 .map2 h3 {
     font-size: 40px;
     margin-bottom: 10px;
-  
 }
 
 
@@ -820,7 +754,7 @@ input[type="checkbox"]{
 
 
 /*FOOTER*/
- /*Aqui utilizo flexbox para distribuir el contenido del footer, con los enlaces a las redes sociales y la politica de privacidad*/
+/*Aqui utilizo flexbox para distribuir el contenido del footer, con los enlaces a las redes sociales y la politica de privacidad*/
 
 footer{
     background-color: #333;
@@ -828,8 +762,6 @@ footer{
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
-   
-
 }
 
 
@@ -837,9 +769,6 @@ footer{
     display: flex;
     justify-content: space-around;
     transition: all 0.4s ease-in-out;
-  
-  
-   
 }
 
 .link{
@@ -848,13 +777,12 @@ footer{
 
 .link ul{
     list-style: none;
-   
+
 }
 
 .link ul li {
     font-size: 25px;
     text-align: justify;
- 
 }
 
 .link ul li a {
@@ -873,9 +801,6 @@ footer{
     display: flex;
     gap: 20px;
     align-items: center;
- 
- 
-   
 }
 
 /*Efecto hover para las redes sociales*/
@@ -891,7 +816,6 @@ footer{
 
 .social1:hover{
     transform:  translateY(-10px);
-   
 }
 
 .direccion{
@@ -984,9 +908,7 @@ hr{
 
     .zonas-pata{
         grid-template-columns: 1fr;
-         gap: 30px;
-      
-     
+        gap: 30px;
     }
 
 
@@ -1007,7 +929,6 @@ hr{
 
         .productos{
         flex-direction: column;
-       
     }
 
     .productos-txt{
@@ -1018,8 +939,6 @@ hr{
 
     .txt-form{
         width: 95%;
-      
-      
     }
 
     .contacto-map img{
@@ -1030,6 +949,5 @@ hr{
 
     .contacto-map{
         flex-direction: column-reverse;
-     
     }
 }

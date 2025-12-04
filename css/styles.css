@@ -134,7 +134,7 @@ section h2{
     color: #fffdfc;
 }
 
-/* Seccion Hero*/
+/* Seccion Hero, aqui utilizo flexbox para centrar el contenido y darle un margen superior, y tambien le agrego una animacion*/
 
 .hero{
 
@@ -151,7 +151,7 @@ section h2{
     margin-bottom: 10px;
 }
 .hero p{
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
     padding: 0 550px;
@@ -203,7 +203,7 @@ section h2{
 }
 
 .infinita-txt p{
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
     color: #fffdfc;
     font-weight: 600;
@@ -228,7 +228,7 @@ hr{
 
 
 
-
+/**seccion  patagonia, Infinita, utilizo un grid para distribuir las fotografias y les doy un position absolute a los enlaces para poder posicionarlos sobre las imagenes **/
 .container-pata{
 
     margin: 0 auto;
@@ -362,7 +362,7 @@ hr{
 }
 
 
-
+/*Utilizo aqui un grid para distribuir las cuatro secciones de presentacion de la empresa*/
 
 .contenedor-presentacion{
     display: grid;
@@ -391,6 +391,8 @@ hr{
     margin: 20px;
 }
 
+
+/*Estilo del h2 y hr de presentacion*/
 .sender{
     background-color: rgba(47, 123, 47, 0.838);
     padding: 10px;
@@ -407,6 +409,14 @@ hr{
     margin: 0 auto;
     margin-bottom: 40px;
     
+}
+
+/*Estilo de las imagenes de presentacion, con flexbox para centrar las imagenes*/
+
+ .present-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -435,7 +445,7 @@ hr{
 }
 
 
-/*ZONAS PATAGONIA*/
+/*ZONAS PATAGONIA */
 
 .zonas{
     text-align: center;
@@ -459,7 +469,7 @@ hr{
 
    
 
-
+/*Utilizo un grid para distribuir las tres zonas ,con sus senderos mas famosos, utilizo un grid, para el contenedor y las zonas*/
 .zonas-pata{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -504,6 +514,7 @@ hr{
     margin-bottom: 10px;
 }
 
+/*Estilo de los titulos y textos de las zonas */
 .zona-1 h3, .zona-2 h3, .zona-3 h3{
     font-size: 25px;
     font-weight: bold;
@@ -523,6 +534,8 @@ hr{
   
    
 }
+
+/*Efecto hover para las zonas, asi al pasar el mouse por encima se eleva un poco la tarjeta*/
 
 .zona-1:hover{
     transform: translateY(-20px);
@@ -553,6 +566,8 @@ hr{
 
 
 /*PRODUCTOS*/
+
+/*Aqui utilizo un grid para distribuir la seccion de productos, y le doy menos espacio al header para que no ocupe tanto espacio y le doy una imagen de fondo con un linear gradient para oscurecerla y lograr un mejor contraste con el texto*/
 
 .productos-back{
     display: grid;
@@ -592,6 +607,7 @@ hr{
     padding: 10px;
 }
 
+/*Utilizo un grid para distribuir los productos, con sus imagenes, textos y precios*/
 
 .producto1{
     display: grid;
@@ -660,6 +676,8 @@ hr{
 
 /*FORMULARIO*/
 
+
+
 .presupuesto{
     display: grid;
     grid-template-rows: 150px 1fr auto;
@@ -695,11 +713,14 @@ hr{
     font-weight: bold;
 }
 
+/*Estilo de los inputs y textarea del formulario*/
+
 .formularios input,
 .formularios textarea{
     padding: 10px;
     border: 1px solid black;
 }
+
 
 .formularios input[type="submit"]{
     background-color: #333;
@@ -745,6 +766,8 @@ input[type="checkbox"]{
 
 /*CONTACTO*/
 
+/*Aqui utilizo un grid para distribuir la seccion de contacto, con una imagen de fondo fija*/
+
 .contacto{
     display: grid;
     grid-template-rows: 150px 1fr auto;
@@ -754,7 +777,15 @@ input[type="checkbox"]{
 }
 
 
+/*Utilizo flexbox para distribuir el contenido de la seccion de contacto, con el formulario y el mapa*/
 
+
+.contacto-h2{
+    text-align: center;
+    color: #fffdfc;
+    font-size: 55px;
+   
+}
 
 .contacto-map{
     display: flex;
@@ -786,6 +817,7 @@ input[type="checkbox"]{
 
 
 /*FOOTER*/
+ /*Aqui utilizo flexbox para distribuir el contenido del footer, con los enlaces a las redes sociales y la politica de privacidad*/
 
 footer{
     background-color: #333;
@@ -843,6 +875,8 @@ footer{
    
 }
 
+/*Efecto hover para las redes sociales*/
+
 .social1 {
     transition: all .5s ease-in-out;
 
@@ -885,7 +919,9 @@ hr{
 }
 
 
-/*animacion*/
+/*animacion, aqui utilizo keyframes para crear una animacion de aparicion, en el header, la barra de navegacion y el logo*/
+
+
 
 
 @keyframes aparecer {
@@ -901,7 +937,7 @@ hr{
 
 }
 
-/* Media Queries */
+/*media queries para dispositivos con un ancho máximo de 768px*/
 
 @media (max-width: 768px){
     .menu label{

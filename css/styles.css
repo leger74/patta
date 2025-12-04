@@ -25,7 +25,7 @@ body {
 
 header {
     background: linear-gradient(rgba(0,0,0,0.3),
-    rgba(0,0,0,0.3)), url(../imagenes/IMG_20240125_092715_455.jpg) center/cover no-repeat;
+    rgba(0,0,0,0.3)), url(../assets/imagenes/IMG_20240125_092715_455.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -42,7 +42,7 @@ header {
 /*Le doy una imagen a todo la pagina asi busco un color verde que sea el color de todo el proyecto y la fijo*/
 
 .principal{
-    background: url(../imagenes/IMG_20240117_162825_915.jpg) center/cover no-repeat fixed;
+    background: url(../assets/imagenes/IMG_20240117_162825_915.jpg) center/cover no-repeat fixed;
 }
 
 
@@ -357,9 +357,11 @@ hr{
     font-size: 55px;
     font-weight: 800;
     color: #fffdfc;
-    margin-top: -20px;
+  
   
 }
+
+
 
 
 .contenedor-presentacion{
@@ -387,6 +389,24 @@ hr{
     padding: 0 200px;
     text-align: justify;
     margin: 20px;
+}
+
+.sender{
+    background-color: rgba(47, 123, 47, 0.838);
+    padding: 10px;
+    border-radius: 10px;
+  
+    
+   
+
+}
+
+.sender1{
+    width: 80%;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
 }
 
 
@@ -434,23 +454,7 @@ hr{
   
 }
 
-.sender{
-    background-color: rgba(47, 123, 47, 0.838);
-    padding: 10px;
-    border-radius: 10px;
-  
-    
-   
 
-}
-
-.sender1{
-    width: 80%;
-    border: 2px solid white;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    
-}
 
 
    
@@ -554,7 +558,7 @@ hr{
     display: grid;
     grid-template-rows: 150px 1fr auto;
     background: linear-gradient(rgba(0,0,0,0.3),
-    rgba(0,0,0,0.3)), url(../imagenes/IMG_20240122_123010_503.jpg) top/cover no-repeat fixed;
+    rgba(0,0,0,0.3)), url(../assets/imagenes/IMG_20240122_123010_503.jpg) top/cover no-repeat fixed;
    
 
 }
@@ -659,7 +663,7 @@ hr{
 .presupuesto{
     display: grid;
     grid-template-rows: 150px 1fr auto;
-    background: url(../imagenes/IMG-20230212-WA0147.jpg) center/cover no-repeat;
+    background: url(../assets/imagenes/IMG-20230212-WA0147.jpg) center/cover no-repeat;
 
 
 }
@@ -744,7 +748,7 @@ input[type="checkbox"]{
 .contacto{
     display: grid;
     grid-template-rows: 150px 1fr auto;
-    background: url(../imagenes/IMG_20240117_162825_915.jpg) center/cover no-repeat fixed;
+    background: url(../assets/imagenes/IMG_20240117_162825_915.jpg) center/cover no-repeat fixed;
     z-index: 10;
    
 }

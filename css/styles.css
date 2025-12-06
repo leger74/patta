@@ -68,7 +68,8 @@ section h2{
 }
 
 .logo{
-    
+    width: 70px;
+    height: 70px;
     background-color:#2612db4f;
     padding: 5px;
     border-radius: 50%;
@@ -85,6 +86,12 @@ section h2{
     position: relative;
     list-style: none;
     float: left;
+}
+ 
+
+.burger{
+    width: 40px;
+    height: 40px;
 }
 
 .menu .navbar ul li a {
@@ -240,6 +247,7 @@ hr{
 
 .pata-bosque{
     position:relative;
+   
 }
 
 .pata-bosque img{
@@ -566,9 +574,13 @@ background-color: rgba(47, 123, 47, 0.552);
 .producto1{
     display: grid;
     grid-template-rows: 60% 30% 10%;
-    height: 700px;
+    height: 800px;
+    width: 100%;
     background-color: rgba(47, 123, 47, 0.87);
     border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+   
 }
 
 .producto1 img{
@@ -576,6 +588,7 @@ background-color: rgba(47, 123, 47, 0.552);
     height: 100%;
     object-fit: cover;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .producto1-txt h3 {
@@ -592,6 +605,10 @@ background-color: rgba(47, 123, 47, 0.552);
     font-size: 20px;
     font-weight: 600;
     border-radius: 10px;
+}
+
+.producto-txt{
+    margin-top: 30px;
 }
 
 .producto-c{
@@ -615,13 +632,15 @@ background-color: rgba(47, 123, 47, 0.552);
 
 .precio{
 
+    display: inline-block;
     justify-content: center;
-    align-items: center;
-
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 20px;
+    font-weight: 800;
+    color: orange;
+   
 }
 
 
@@ -805,8 +824,15 @@ footer{
 
 /*Efecto hover para las redes sociales*/
 
-.social1 {
-    transition: all .5s ease-in-out;
+.social1 img {
+    height: 60px;
+    width: 60px;
+
+
+}
+
+.social1{
+        transition: all .5s ease-in-out;
 
 }
 
@@ -886,6 +912,8 @@ hr{
 
     .menu #menu:checked ~ .navbar{
         display: flex;
+
+        
        
     }
     .menu .navbar ul li a{

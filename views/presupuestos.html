@@ -10,10 +10,10 @@
 <body class="presupuesto">
     <header>
         <div class="menu">
-            <img src="../assets/imagenes/signo-sagitario-de-un-arquero.png" alt="figura de un hombre con un arco, icono en negro" height="70" width="70" class="logo">
+            <img src="../assets/imagenes/signo-sagitario-de-un-arquero.png" alt="figura de un hombre con un arco, icono en negro" height="512" width="512" class="logo">
         <input type="checkbox" name="menu" id="menu">
         <label for="menu">
-            <img src="../assets/imagenes/menu-burger-horizontal-svgrepo-com.svg" alt="menu icono hamburguesa" height="40" width="40">
+            <img src="../assets/imagenes/menu-burger-horizontal-svgrepo-com.svg" alt="menu icono hamburguesa" height="800" width="800" class="burger">
 
         </label>
         <nav class="navbar">
@@ -34,18 +34,17 @@
             <h2 class="txt-form">Si necesita mas informacion, debe rellenar este formulario, gracias.</h2>
 
             <form id="formulario" class="formularios">
-                
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" pattern="[a-Za-z] {3,}" required>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Introduce tu apellido" pattern="[a-Z-a-z] {3,}" required>
-                    <label for="email">Correo electronico:</label>
-                    <input type="email" name="email" id="email" placeholder="Introduce tu correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" required>
-                    <label for="tel">Telefono:</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Introduce tu telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="el formato debe ser : 123-456-7890" required>
-                    <label for="mensaje">Si desea escribanos un mensaje con sus dudas y preguntas:</label>
-                    <textarea name="mensaje" id="mensaje" rows="6"></textarea>
-                    <input type="submit" value="Enviar">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,}" title="Solo letras y mínimo 3 caracteres" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Introduce tu apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,}" title="Solo letras y mínimo 3 caracteres" required>
+                <label for="email">Correo electronico:</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Ingresa un correo válido" maxlength="60" required>
+                <label for="tel">Telefono:</label>
+                <input type="tel" name="tel" id="tel" placeholder="Introduce tu teléfono" pattern="^\+?\d{9,15}$" title="Introduce solo números, con o sin prefijo internacional. Ejemplo: 612345678 o +34612345678" required>
+                <label for="mensaje">Si desea escribanos un mensaje con sus dudas y preguntas:</label>
+                <textarea name="mensaje" id="mensaje" rows="6" minlength="10" maxlength="500" placeholder="Escribe aquí tus dudas, preguntas o comentarios (mínimo 10 caracteres)"></textarea>
+                <input type="submit" value="Enviar">
 
 
                     
@@ -75,15 +74,15 @@
             <div class="link-redes">
                 <h3>Contactanos tambien en :</h3>
                 <div class="social1">
-                    <a href="https://www.facebook.com" target="_blank"><img src="../assets/imagenes/facebook-3-logo-svgrepo-com.svg" alt="logo de facebook" height="40" width="40"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../assets/imagenes/facebook-3-logo-svgrepo-com.svg" alt="logo de facebook" width="800" height="800" ></a>
 
                     </div>
                     <div class="social1">
-                        <a href="https://www.instagram.com" target="_blank"><img src="../assets/imagenes/instagram-1-svgrepo-com.svg" alt="logo de instagram" height="40" width="40"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="../assets/imagenes/instagram-1-svgrepo-com.svg" alt="logo de instagram" width="800" height="800" ></a>
 
                     </div>
                     <div class="social1">
-                        <a href="https://www.whatsapp.com" target="_blank"><img src="../assets/imagenes/whatsapp-icon-logo-svgrepo-com.svg" alt="logo de whatsapp" height="40" width="40"></a>
+                        <a href="https://www.whatsapp.com" target="_blank"><img src="../assets/imagenes/whatsapp-icon-logo-svgrepo-com.svg" alt="logo de whatsapp" width="800" height="800" ></a>
 
                     </div>
                 </div>
